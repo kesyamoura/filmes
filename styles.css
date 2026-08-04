@@ -72,7 +72,7 @@ button:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 20px;
+    padding: 15px 40px;
     box-sizing: border-box;
     z-index: 1000;
 }
@@ -92,7 +92,7 @@ button:hover{
 .menu-lateral a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 25px;
     transition: color 0.3s;
 }
 
@@ -209,6 +209,35 @@ a:link {
     color: white;
     text-align: justify;
     font-size: 14px;
+}
+
+.titulo-recomendacoes{
+    text-align: center;
+    color: #ffffff;
+    font-size: 42px;
+    margin: 30px 0;
+    text-decoration: underline;
+}
+
+.subtitulo-recomendacoes{
+    text-align: center;
+    color: #d8b4f8;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.card-filme h2{
+    font-size: 22px;
+}
+
+.card-filme p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.card-filme:hover{
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 0 20px #9701bd;
 }
 
 
