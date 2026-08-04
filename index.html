@@ -5,12 +5,6 @@
     <meta charset="UTF-8">
     <title>Minhas Séries/Filmes Favoritos</title>
     <link rel="stylesheet" href="styles.css">
-
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#9701bd">
-    <link rel="icon" href="192.png">
-    <link rel="apple-touch-icon" href="192.png">
-    <script src="pwa.js"></script>
 </head>
 
 <body>
@@ -34,15 +28,13 @@
             <button id="btn-assistir">🎬 Onde Assistir</button>
 
             <button id="btn-contato">📞 Contato</button>
+
+            <button id="btn-recomencoes">🎟️ Recomendacoes</button>
         </div>
 
     </nav>
 
-    <header id="topo" class="banner">
-        <div class="banner-conteúdo">
-            <h1>Sugestões que você vai amar</h1>
-        </div>
-    </header>
+
 
     <div class="lista-filme">
         <section class="card-filme">
@@ -115,11 +107,11 @@
         </section>
 
         <section class="card-series">
-                <h2>Todo Mundo odeia o Cris</h2>
+            <h2>Todo Mundo odeia o Cris</h2>
 
-                <img class="imagens"
-                    src="https://s2-globo-play.glbimg.com/usm1n4kuVgYfIIM3zpaoQILpng8=/362x536/https://s2-globo-play.glbimg.com/YDNCbNX8eDEcNOvBb13Zix-qHhc=/https://s2.glbimg.com/xe74Dgh6O9Grs3phBFUKLJ8c2r0=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2019/2/a/sdBJPWSOedTfVzkzfWPg/2019-463-series-cbs-jul-everybody-hates-chris-poster.jpg"
-                    alt="Pôster da série Todo Mundo Odeia o Cris">
+            <img class="imagens"
+                src="https://s2-globo-play.glbimg.com/usm1n4kuVgYfIIM3zpaoQILpng8=/362x536/https://s2-globo-play.glbimg.com/YDNCbNX8eDEcNOvBb13Zix-qHhc=/https://s2.glbimg.com/xe74Dgh6O9Grs3phBFUKLJ8c2r0=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2019/2/a/sdBJPWSOedTfVzkzfWPg/2019-463-series-cbs-jul-everybody-hates-chris-poster.jpg"
+                alt="Pôster da série Todo Mundo Odeia o Cris">
         </section>
 
 
@@ -165,6 +157,10 @@
 
         function contato() {
             window.location.href = "#contato";
+        }
+
+        function recomendacoes() {
+            window.location.href = "recomendacoes.html";
         }
     </script>
 </body>
