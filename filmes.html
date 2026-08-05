@@ -6,6 +6,11 @@
     <title>Filmes</title>
     <link rel="stylesheet" href="styles.css">
 
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#9701bd">
+    <link rel="icon" href="192.png">
+    <link rel="apple-touch-icon" href="192.png">
+    <script src="pwa.js"></script>
 </head>
 
 <body>
@@ -32,7 +37,7 @@
 
             <button id="btn-contato">📞 Contato</button>
 
-            <button id="btn-recomençoes">🎟️ Recomendacoes</button>
+            <button id="btn-recomendacoes">🎟️ Recomendacoes</button>
         </div>
 
     </nav>
@@ -132,6 +137,7 @@
                     Debbie Ocean, que recém-saiu da prisão e junta uma equipe
                     de especialistas para roubar um colar de diamantes milionário durante
                     o baile do Met Gala em Nova York.
+                </p>
             </section>
 
             <section class="card-filme">
@@ -143,6 +149,7 @@
                 <p class="desc">
                     Retrata a rotina violenta do Rio de Janeiro, a busca do Capitão Nascimento
                     por um substituto no BOPE, e a trajetória de dois novos policiais honestos
+                </p>
             </section>
 
             <section class="card-filme">
@@ -154,6 +161,7 @@
                 <p class="desc">
                     O veterano de guerra John Rambo em uma missão de
                     resgate e vingança contra um cartel mexicano
+                </p>
             </section>
 
             <section class="card-filme">
@@ -166,6 +174,7 @@
                     Um jovem viking desajeitado da ilha de Berk que faz amizade com um
                     dragão ferido chamado Banguela, desafiando as tradições
                     de sua vila de matadores de monstros
+                </p>
             </section>
 
             <section class="card-filme">
@@ -258,12 +267,14 @@
         let btnSeries = document.getElementById("btn-series");
         let btnAssistir = document.getElementById("btn-assistir");
         let btnContato = document.getElementById("btn-contato");
+        let btnRecomendacoes = document.getElementById("btn-recomendacoes");
 
         btnMenu.addEventListener("click", menu);
         btnFilmes.addEventListener("click", filmes);
         btnSeries.addEventListener("click", series);
         btnAssistir.addEventListener("click", assistir);
         btnContato.addEventListener("click", contato);
+        btnRecomendacoes.addEventListener("click", recomendacoes);
 
         function menu() {
             window.location.href = "index.html";
@@ -283,6 +294,10 @@
 
         function contato() {
             window.location.href = "#contato";
+        }
+
+        function recomendacoes() {
+            window.location.href = "recomendacoes.html";
         }
     </script>
 

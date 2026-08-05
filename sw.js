@@ -1,9 +1,10 @@
-const CACHE_NAME = "filmes-e-series-v1";
+const CACHE_NAME = "filmes-e-series-v2";
 
 const ARQUIVOS_PARA_CACHE = [
   "index.html",
   "filmes.html",
   "series.html",
+  "recomendacoes.html",
   "styles.css",
   "manifest.json",
   "192.png",

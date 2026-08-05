@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <title>Minhas Séries/Filmes Favoritos</title>
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#9701bd">
+    <link rel="icon" href="192.png">
+    <link rel="apple-touch-icon" href="192.png">
+    <script src="pwa.js"></script>
 </head>
 
 <body>
@@ -29,7 +35,7 @@
 
             <button id="btn-contato">📞 Contato</button>
 
-            <button id="btn-recomencoes">🎟️ Recomendacoes</button>
+            <button id="btn-recomendacoes">🎟️ Recomendacoes</button>
         </div>
 
     </nav>
@@ -132,12 +138,14 @@
         let btnSeries = document.getElementById("btn-series");
         let btnAssistir = document.getElementById("btn-assistir");
         let btnContato = document.getElementById("btn-contato");
+        let btnRecomendacoes = document.getElementById("btn-recomendacoes");
 
         btnMenu.addEventListener("click", menu);
         btnFilmes.addEventListener("click", filmes);
         btnSeries.addEventListener("click", series);
         btnAssistir.addEventListener("click", assistir);
         btnContato.addEventListener("click", contato);
+        btnRecomendacoes.addEventListener("click", recomendacoes);
 
         function menu() {
             window.location.href = "index.html";

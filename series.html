@@ -6,6 +6,11 @@
     <title>Séries</title>
     <link rel="stylesheet" href="styles.css">
 
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#9701bd">
+    <link rel="icon" href="192.png">
+    <link rel="apple-touch-icon" href="192.png">
+    <script src="pwa.js"></script>
 </head>
 
 <body>
@@ -31,7 +36,7 @@
 
             <button id="btn-contato">📞 Contato</button>
 
-            <button id="btn-recomencoes">🎟️ Recomendacoes</button>
+            <button id="btn-recomendacoes">🎟️ Recomendacoes</button>
 
         </div>
     </nav>
@@ -159,6 +164,7 @@
                 <p class="desc">
                     Um grupo de crianças na cidade de Hawkins que descobre o Mundo Invertido,
                     enfrenta monstros perigosos e protege uma amiga com poderes.
+                </p>
             </section>
 
             <section class="card-series">
@@ -172,6 +178,7 @@
                     Corpo de Bombeiros de Chicago. A trama principal foca nos riscos extremos da profissão
                     e nos conflitos pessoais da equipe, acentuados inicialmente pela morte
                     de um colega que gera tensão entre os tenentes
+                </p>
             </section>
 
             <section class="card-series">
@@ -184,6 +191,7 @@
                 <p class="desc">
                     Uma mulher sem memória é achada nua na Times Square com o
                     corpo cheio de tatuagens, guiando o FBI
+                </p>
             </section>
 
             <section class="card-series">
@@ -196,6 +204,7 @@
                 <p class="desc">
                     É um drama médico que acompanha a vida de Meredith Grey e
                     de outros médicos em um hospital de Seattle
+                </p>
             </section>
 
             <section class="card-series">
@@ -209,6 +218,7 @@
                     Raymond "Red" Reddington, um dos criminosos mais procurados pelo FBI, entrega-se misteriosamente e
                     oferece uma lista secreta de criminosos globais perigosos em troca de imunidade, exigindo trabalhar
                     exclusivamente com a novata Elizabeth Keen
+                </p>
             </section>
 
             <section class="card-series">
@@ -221,6 +231,7 @@
                     A família Dutton, proprietária do maior rancho dos Estados Unidos, lidando com intensos
                     conflitos de terras, disputas familiares e ameaças de construtoras e de uma
                     reserva indígena vizinha
+                </p>
             </section>
 
             <section class="card-series">
@@ -235,6 +246,7 @@
                     uma visão compartilhada. Juntas, elas passam a dividir sensações, idiomas e habilidades enquanto
                     fogem de uma organização
                     secreta que as considera uma ameaça
+                </p>
             </section>
 
 
@@ -248,6 +260,7 @@
                 <p class="desc">
                     A trama retrata a corrida contra o tempo de médicos, físicos e autoridades para conter a
                     contaminação letal após o roubo de um equipamento médico abandonado
+                </p>
             </section>
 
 
@@ -262,6 +275,7 @@
                     lidera uma unidade de elite de armas e táticas especiais.
                     Ele vive dividido entre a lealdade à corporação policial e às ruas da comunidade
                     onde cresceu
+                </p>
             </section>
 
 
@@ -275,6 +289,7 @@
                 <p class="desc">
                     Retrata a jornada de Alex (Margaret Qualley), uma jovem mãe que foge com sua filha
                     pequena de um relacionamento abusivo e precisa trabalhar como faxineira para sobreviver
+                </p>
             </section>
 
 
@@ -290,6 +305,7 @@
                     distância
                     e estudar no mesmo internato que sua falecida mãe frequentou. No local, ela descobre que
                     os romances reais são muito mais complexos do que imaginava
+                </p>
             </section>
 
             <section class="card-series">
@@ -304,6 +320,7 @@
                     Inglaterra na
                     casa do avô, onde cria um vínculo com Raven, um cavalo misterioso e selvagem,
                     e se envolve em grandes aventuras
+                </p>
             </section>
 
 
@@ -324,12 +341,14 @@
         let btnSeries = document.getElementById("btn-series");
         let btnAssistir = document.getElementById("btn-assistir");
         let btnContato = document.getElementById("btn-contato");
+        let btnRecomendacoes = document.getElementById("btn-recomendacoes");
 
         btnMenu.addEventListener("click", menu);
         btnFilmes.addEventListener("click", filmes);
         btnSeries.addEventListener("click", series);
         btnAssistir.addEventListener("click", assistir);
         btnContato.addEventListener("click", contato);
+        btnRecomendacoes.addEventListener("click", recomendacoes);
 
         function menu() {
             window.location.href = "index.html";
@@ -349,6 +368,10 @@
 
         function contato() {
             window.location.href = "#contato";
+        }
+
+        function recomendacoes() {
+            window.location.href = "recomendacoes.html";
         }
     </script>
 

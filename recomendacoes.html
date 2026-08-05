@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <title>Minhas Séries/Filmes Favoritos</title>
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#9701bd">
+    <link rel="icon" href="192.png">
+    <link rel="apple-touch-icon" href="192.png">
+    <script src="pwa.js"></script>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="navbar-esquerda">
 
-            <a href="#topo" class="navbar-logo">
+            <a href="index.html" class="navbar-logo">
                 Minhas Séries/Filmes Favoritos
             </a>
 
@@ -29,7 +35,7 @@
 
             <button id="btn-contato">📞 Contato</button>
 
-            <button id="btn-recomencoes">🎟️ Recomendacoes</button>
+            <button id="btn-recomendacoes">🎟️ Recomendacoes</button>
         </div>
 
     </nav>
@@ -82,6 +88,46 @@
             <p>🎬 Obrigado por visitar minha página de recomendações!</p>
         </footer>
     </main>
+
+    <script>
+        let btnMenu = document.getElementById("btn-menu");
+        let btnFilmes = document.getElementById("btn-filmes");
+        let btnSeries = document.getElementById("btn-series");
+        let btnAssistir = document.getElementById("btn-assistir");
+        let btnContato = document.getElementById("btn-contato");
+        let btnRecomendacoes = document.getElementById("btn-recomendacoes");
+
+        btnMenu.addEventListener("click", menu);
+        btnFilmes.addEventListener("click", filmes);
+        btnSeries.addEventListener("click", series);
+        btnAssistir.addEventListener("click", assistir);
+        btnContato.addEventListener("click", contato);
+        btnRecomendacoes.addEventListener("click", recomendacoes);
+
+        function menu() {
+            window.location.href = "index.html";
+        }
+
+        function filmes() {
+            window.location.href = "filmes.html";
+        }
+
+        function series() {
+            window.location.href = "series.html";
+        }
+
+        function assistir() {
+            window.location.href = "filmes.html#onde-assistir";
+        }
+
+        function contato() {
+            window.location.href = "index.html#contato";
+        }
+
+        function recomendacoes() {
+            window.location.href = "recomendacoes.html";
+        }
+    </script>
 
 </body>
 
